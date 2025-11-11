@@ -18,13 +18,17 @@ void Person :: display() {
     cout << "Person Id :" << getId() << endl;
 }
 
-Student()
+Student ::Student()
 {
 }
-~Student ()
+Student :: ~Student ()
 {
-   delete [] students;
+   
 }
+Student :: Student(int yl , string m)
+{
+yearLevel = yl;
+major = m;
 void Student :: displayinfo(): display()
 {
     cout << " Student yearLevel :" << getyearLevel() << endl;
@@ -46,19 +50,35 @@ for (int i =0; i<currentStudents;i++) {
 
 
 }
-
-Course()
+Course :: Course (string CC, string cN, int Ms, Student* s, int cs)
+{
+courseCode = cc;
+CourseName = cN;
+maxStudents = Ms;
+s = new Student[cs];
+    currentStudents = cs;
+Course :: Course()
 {
 }
-~Course()
+Course :: ~Course()
 {
+    delete [] students;
 }
 
-void Course :: displayCourseInfo() {
-    
+
+void Course :: displayCourseInfo(): displayinfo() {
+    cout << " Course Name : " << courseName << endl
 }
 
 int main() {
+Person p("Mahmoud" , 16001987);
+    Student s( 2 , "Cs");
+    Instructor I("Computer Science " , 5);
+    
+
+    return 0;
+
+
+
 
 }
-    return 0;
