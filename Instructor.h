@@ -1,19 +1,26 @@
-#ifndef INSTRUCTOR_H
-#define INSTRUCTOR_H
+//
+// Created by Mahmoud Wael on 11/11/2025.
+//
 
-#include "Person.h"
-using namespace std;
-//#write Instructor class here
+#ifndef UNTITLED2_INSTRUCTOR_H
+#define UNTITLED2_INSTRUCTOR_H
+
+class Instructor {
+private:
+    string department;
+    int experienceyears;
+
+public:
+    Instructor();
+    Intrsuctor(string dep , int ey);
+    ~Instructor();
+    void display();
+
+
+    
+};
 
 
 
 
-
-
-
-
-
-
-
-
-#endif
+#endif //UNTITLED2_INSTRUCTOR_H
