@@ -1,20 +1,32 @@
-#ifndef PERSON_H
-#define PERSON_H
+//
+// Created by Mahmoud Wael on 11/11/2025.
+//
 
-#include <string>
+#ifndef UNTITLED2_PERSON_H
+#define UNTITLED2_PERSON_H
 using namespace std;
+#include <string>
+class Person {
+private:
+    string name;
+    int id;
 
-//#write Person class here
+public:
+    Person();
+    Person(string n , int idd);
+    ~Person();
+
+    void display();
+    string getName() {
+        return name;
+    }
+
+    int getId() {
+        return id;
+    }
 
 
+};
 
 
-
-
-
-
-
-
-
-
-#endif
+#endif //UNTITLED2_PERSON_H
